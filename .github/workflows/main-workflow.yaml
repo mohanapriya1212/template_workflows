@@ -1,10 +1,10 @@
 
 name: My workflow
 on:
-  workflow_dispatch:
+  [push]
 
 jobs:
-  call-workflow-using-branch:
+  main:
     uses: mohanapriya1212/spring-petclinic-GitAct/.github/workflows/maven-build.yml@main
 
         
