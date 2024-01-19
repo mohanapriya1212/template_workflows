@@ -3,7 +3,7 @@ name: My workflow
 on: [push]
 
 jobs:
-  main:
+  call-workflow-using-branch:
     uses: mohanapriya1212/spring-petclinic-GitAct/.github/workflows/maven-build.yml@main
 
         
