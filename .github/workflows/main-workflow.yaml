@@ -1,7 +1,14 @@
 
 name: My workflow
 on:
-  [push]
+  push:
+    branches: [ main ]
+    paths:
+    - 'src/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+    - 'src/**'
 
 jobs:
   main:
