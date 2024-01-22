@@ -35,8 +35,5 @@ jobs:
           java-version: ${{matrix.java}}
           distribution: 'adopt'
           cache: maven
-    if: false
-    needs:[build]
-      steps:
-        - name: Test  
-          run: mvn --batch-mode -Dmaven.test.failure.ignore=false test
+      - name: Test  
+        run: mvn --batch-mode -Dmaven.test.failure.ignore=false test
