@@ -6,13 +6,16 @@ on:
   pull_request:
     branches: [main]
     
-  workflow_dispatch:
-    
+  
 jobs:
   main:
     uses: mohanapriya1212/spring-petclinic-GitAct/.github/workflows/maven-build.yml@main
 
-        
+  jobs1:
+      runs-on: ubuntu-latest     
+      steps:
+      - name: "ex"      
+        uses: mohanapriya1212/spring-petclinic-GitAct/blob/main/pom.xml@main
       
     
     
