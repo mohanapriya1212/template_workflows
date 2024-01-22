@@ -1,8 +1,13 @@
 
 name: My workflow
 on:
-  push   
-
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    
+  workflow_dispatch:
+    
 jobs:
   main:
     uses: mohanapriya1212/spring-petclinic-GitAct/.github/workflows/maven-build.yml@main
